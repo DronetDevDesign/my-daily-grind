@@ -1,4 +1,4 @@
-var todaysDate = moment().format('MMMM Do YYYY, h:mm:ss a').toString();
-document.getElementById("currentDay").innerHTML = todaysDate;
-console.log(todaysDate);
+var todaysDate = moment().format('dddd, MMMM Do YYYY').toString();
+document.getElementById("current-day").innerHTML = todaysDate;
+// console.log(todaysDate);
 

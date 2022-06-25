@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', cursive;
   font-size: 16px;
   line-height: 1;
+  background-color: rgb(255, 255, 255);
+  overscroll-behavior: none;
 }
 
 textarea {
@@ -14,15 +20,59 @@ textarea {
 }
 
 .jumbotron {
+  background-image: url("/assets/images/cityscape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   text-align: center;
-  background-color: transparent;
-  color: black;
+  border-bottom: 10px solid #2a60f4;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
   border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+#title {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #fef3bc;
+  font-size: 100px;
+  text-shadow: 3px 4px 7px #000000;
+}
+
+.daily {
+  position: relative;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 140px;
+  right: -12px;
+  letter-spacing: 10px;
+  color: #ffffff;
+  text-shadow: 3px 4px 7px #000000;
+}
+
+#subhead {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-shadow: 3px 4px 7px #000000;
+  color: #fef3bc;
+}
+
+#current-day {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 2px 4px #000000;
+}
+
+.input-text-area {
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .time-block {
@@ -32,9 +82,8 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 50px;
   border-top: 1px solid white;
-  ;
 }
 
 .hour {
@@ -58,15 +107,26 @@ textarea {
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+.fa-floppy-disk {
+  font-size: 36px;
+  cursor: pointer;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.saveBtn {
+  border-left: 1px solid rgb(232, 232, 232);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #2a60f4;
+  color: #ffffff;
+}
+
+.saveBtn:hover {
+  background-color: #0043fd;
+  transition: all .2s ease-in-out;
+}
+
+.saveBtn .fa-floppy-disk:hover {
+  font-size: 40px;
+  transition: all .2s ease-in-out;
+  text-shadow: 0 2px 5px #00299b;
 }
