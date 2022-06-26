@@ -15,7 +15,7 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   padding: 10px;
 }
 
@@ -70,9 +70,14 @@ textarea {
   text-shadow: 0 2px 4px #000000;
 }
 
-.input-text-area {
-  font-size: 24px;
+#input-text-area {
+  font-size: 18px;
   font-weight: 300;
+  width: 100%;
+}
+
+textarea::placeholder {
+  color: #bbbbbb;
 }
 
 .time-block {
@@ -122,6 +127,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #2a60f4;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .saveBtn:hover {
