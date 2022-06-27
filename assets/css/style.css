@@ -39,9 +39,12 @@ textarea {
 
 #title {
   font-family: 'Kdam Thmor Pro', sans-serif;
-  color: #fef3bc;
   font-size: 100px;
-  text-shadow: 3px 4px 7px #000000;
+  color: #ffca4e;
+  text-shadow: -7px -7px 4px #2b0f87, 
+                8px 8px 10px #2b0f87, 
+                8px -8px 10px #2b0f87, 
+                -8px 8px 10px #2b0f87;
 }
 
 .daily {
@@ -51,7 +54,7 @@ textarea {
   right: -12px;
   letter-spacing: 10px;
   color: #ffffff;
-  text-shadow: 3px 4px 7px #000000;
+  /* text-shadow: 3px 4px 7px #000000; */
 }
 
 #subhead {
@@ -59,15 +62,16 @@ textarea {
   font-weight: 500;
   font-size: 30px;
   margin-bottom: 25px;
-  text-shadow: 3px 4px 7px #000000;
-  color: #fef3bc;
+  text-shadow: 4px 6px 7px #180458;
+  color: #ffd46f;
+  line-height: 1.4;
 }
 
 #current-day {
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
-  text-shadow: 0 2px 4px #000000;
+  text-shadow: 4px 6px 7px #180458;
 }
 
 #input-text-area {
@@ -131,12 +135,11 @@ textarea::placeholder {
 }
 
 .saveBtn:hover {
-  background-color: #0043fd;
+  background-image: linear-gradient(#2a60f4, #3511ab);
   transition: all .2s ease-in-out;
 }
 
 .saveBtn .fa-floppy-disk:hover {
   font-size: 40px;
   transition: all .2s ease-in-out;
-  text-shadow: 0 2px 5px #00299b;
 }

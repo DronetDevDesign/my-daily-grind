@@ -1,31 +1,45 @@
-var inputs = {};
-var inputElement = document.querySelector("#input-text-area");
+// this variable should hold the arrays of the users text inputs once placed in localStorage:
+var allInputTextAreas = {};
 
 // moment.js current date:
 var todaysDate = moment().format('dddd, MMMM Do YYYY').toString();
 document.getElementById("current-day").innerHTML = todaysDate;
 // console.log(todaysDate);
 
+
+
+// ****************************************************************
+
 // save calendar input-list-element:
-var saveInput = function() {
-  localStorage.setItem("inputElement", JSON.stringify(inputElement));
+var saveInput = function(input) {
+  localStorage.setItem("inputText", JSON.stringify(input));
 };
 
+// ******************** ORIGINAL OPTION *****************************
+
 // saveBtn targeting textarea:
-$("#time-block-groups .saveBtn").click(function() {
-  var inputText = $("#time-block-groups .input-list-element").val();
+// $(".saveBtn").click(function() {
+//   var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
+//   if (inputText) {
+//     saveInput(inputText); 
+//   };
 
-  saveInput();
+//   console.log(inputText);
+// });
 
-  console.log(inputText);
+
+
+// *********************** SECOND OPTION *****************************
+
+$(".saveBtn").click(function() {
+  $(".input-list-element").each(function(input) {
+    var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
+    if (inputText) {
+     saveInput(inputText.push());
+    }
+    console.log($(this));
+  });
 });
 
 
-$(".input-list-element").on( "click", function() {
-  console.log($(this).text());
-
-  saveInput();
-});
-
-
-
+//getItem : localStorage.getItem("inputText", JSON.stringify(input));
