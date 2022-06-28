@@ -15,6 +15,22 @@ var saveInput = function(input) {
   localStorage.setItem("inputText", JSON.stringify(input));
 };
 
+
+  $(".saveBtn").on("click", function() {
+    var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
+    if (inputText) {
+     saveInput(inputText);
+    }
+    console.log(inputText);
+  });
+
+
+
+
+
+
+  
+
 // ******************** ORIGINAL OPTION *****************************
 
 // saveBtn targeting textarea:
@@ -29,36 +45,25 @@ var saveInput = function(input) {
 // });
 
 
-$(".saveBtn").on("click", function() {
-    // var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
-    var inputText = $(this).siblings(".input-schedule");
-    for (var i = 0; i < inputText.length; i++) {
-      console.log(inputText[i].id);
-      console.log(this.id);
-      if (this.id === inputText[i].id) {
-        console.log("hello");
-        var currentElement = $(this).siblings(".input-schedule")[i];
-        console.log(currentElement.children(".input-list-element").val());
-      }
-    }
-    // if (inputText) {
-    //  saveInput(inputText);
-    // }
-    // console.log(inputText);
-  });
+// $(".saveBtn").on("click", function() {
+//     // var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
+//     var inputText = $(this).siblings(".input-schedule");
+//     for (var i = 0; i < inputText.length; i++) {
+//       console.log(inputText[i].id);
+//       console.log(this.id);
+//       if (this.id === inputText[i].id) {
+//         console.log("hello");
+//         var currentElement = $(this).siblings(".input-schedule")[i];
+//         console.log(currentElement.children(".input-list-element").val());
+//       }
+//     }
+//     if (inputText) {
+//      saveInput(inputText);
+//     }
+//     console.log(inputText);
+//   });
 
 // var inputText = $(e.target).prev().children().val();
-
-
-
-  // $(".saveBtn").click(function() {
-  //   var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
-  //   if (inputText) {
-  //    saveInput(inputText);
-  //   }
-  //   console.log(inputText);
-  // });
-
 
 
 // *********************** SECOND OPTION *****************************
