@@ -121,6 +121,7 @@ textarea::placeholder {
 }
 
 .fa-floppy-disk {
+  padding-top: 12px;
   font-size: 36px;
   cursor: pointer;
 }

@@ -18,28 +18,29 @@ var saveInput = function(input) {
 // ******************** ORIGINAL OPTION *****************************
 
 // saveBtn targeting textarea:
-// $(".saveBtn").click(function() {
-//   var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
-//   if (inputText) {
-//     saveInput(inputText); 
-//   };
+$(".saveBtn").on("click", function(e) {
+  var inputText = $(e.target).parent().children("textarea");
 
-//   console.log(inputText);
-// });
+  if (inputText) {
+    saveInput(inputText); 
+  };
+
+  console.log($(inputText));
+});
 
 
 
 // *********************** SECOND OPTION *****************************
 
-$(".saveBtn").click(function() {
-  $(".input-list-element").each(function(input) {
-    var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
-    if (inputText) {
-     saveInput(inputText.push());
-    }
-    console.log($(this));
-  });
-});
+// $(".saveBtn").click(function() {
+//   $(".input-list-element").each(function(input) {
+//     var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
+//     if (inputText) {
+//      saveInput(inputText.push());
+//     }
+//     console.log($(this));
+//   });
+// });
 
 
 //getItem : localStorage.getItem("inputText", JSON.stringify(input));
