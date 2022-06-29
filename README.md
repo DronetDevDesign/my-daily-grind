@@ -17,7 +17,7 @@ PLAN YOUR DAY USING THIS VERY EASY-TO-USE CALENDAR APP.
   - 500px (Small devices - large cell phones)
 
 ## Website Link:
-https://dronetdevdesign.github.io/git-quizzy/
+https://dronetdevdesign.github.io/my-daily-grind/
 
 ## This Website Created Using:
 * Javascript
