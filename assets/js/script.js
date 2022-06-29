@@ -20,8 +20,8 @@ var saveInput = function(input) {
   localStorage.setItem("inputText", JSON.stringify(input));
 };
 
-BLOCK 2 -
-I am trying to save the ".hour" AND ".input-schedule" together in localStorage.
+// BLOCK 2 -
+// I am trying to save the ".hour" AND ".input-schedule" together in localStorage.
 $(".saveBtn").on("click", function() {
   var inputText = $(this).parent(".input-group").children(".hour, .input-schedule").val();
     if (inputText) {
