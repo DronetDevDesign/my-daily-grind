@@ -26,7 +26,7 @@ textarea {
 }
 
 .jumbotron {
-  background-image: url("/assets/images/cityscape.png");
+  background-image: url("../images/cityscape.png");
   background-color: #2a60f4;
   background-repeat: no-repeat;
   background-size: cover;
