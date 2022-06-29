@@ -29,8 +29,7 @@ $(".saveBtn").on("click", function() {
 
   var exactHour = $(this)
     .parent(".input-group")
-    .children("h4")
-    .text(".hour");
+    .children(".hour");
 
       if (exactHour) {
       getTime(exactHour);
