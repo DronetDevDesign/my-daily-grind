@@ -21,6 +21,9 @@ https://dronetdevdesign.github.io/my-daily-grind/
 
 ## This Website Created Using:
 * Javascript
+* jQuery
+* moment.JS
+* Bootstrap
 * HTML
 * CSS
 
