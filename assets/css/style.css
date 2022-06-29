@@ -10,6 +10,11 @@ body {
   overscroll-behavior: none;
 }
 
+textarea::placeholder {
+  /* color: #ffffff; */
+  font-size: 16px;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -18,11 +23,6 @@ textarea {
   padding: 10px;
   font-size: 16px;
   font-weight: 500;
-}
-
-textarea::placeholder {
-  color: #c7c7c7;
-  font-size: 16px;
 }
 
 .jumbotron {
@@ -60,7 +60,6 @@ textarea::placeholder {
   right: -12px;
   letter-spacing: 10px;
   color: #ffffff;
-  /* text-shadow: 3px 4px 7px #000000; */
 }
 
 #subhead {
@@ -136,4 +135,26 @@ textarea::placeholder {
 .saveBtn .fa-floppy-disk:hover {
   font-size: 26px;
   transition: all .2s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+
+  #title {
+    font-size: 55px;
+    }
+  
+    .daily {
+      font-size: 70px;
+      right: -7px;
+    }
+
+    #subhead {
+      font-size: 22px;
+    }
+
+    #current-day {
+      font-size: 28px;
+    }
 }
