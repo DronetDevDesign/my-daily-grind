@@ -16,12 +16,12 @@ textarea {
   resize: none;
   color: #000000;
   padding: 10px;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 textarea::placeholder {
-  color: #bbbbbb;
+  color: #c7c7c7;
   font-size: 16px;
 }
 
@@ -88,7 +88,9 @@ textarea::placeholder {
 .hour {
   width: 95px;
   text-align: right;
-  padding: 8px 30px;
+  justify-content: right;
+  padding-top: 8px;
+  padding-right: 20px;
   font-size: 16px;
   background-color: #ffffff;
   color: #666666;
