@@ -15,8 +15,14 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  /* border-left: 1px solid black; */
   padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+textarea::placeholder {
+  color: #bbbbbb;
+  font-size: 16px;
 }
 
 .jumbotron {
@@ -41,10 +47,10 @@ textarea {
   font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 100px;
   color: #ffca4e;
-  text-shadow: -7px -7px 4px #2b0f87, 
-                8px 8px 10px #2b0f87, 
-                8px -8px 10px #2b0f87, 
-                -8px 8px 10px #2b0f87;
+  text-shadow: -7px -7px 4px #2b0f87,
+    8px 8px 10px #2b0f87,
+    8px -8px 10px #2b0f87,
+    -8px 8px 10px #2b0f87;
 }
 
 .daily {
@@ -74,35 +80,19 @@ textarea {
   text-shadow: 4px 6px 7px #180458;
 }
 
-#input-text-area {
-  font-size: 18px;
-  font-weight: 300;
-  width: 100%;
-}
-
-textarea::placeholder {
-  color: #bbbbbb;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 50px;
-  border-top: 1px solid white;
-}
-
-.time-of-day {
-  color: #666666;
+.main-container {
+  margin: auto;
+  max-width: 85%;
 }
 
 .hour {
+  width: 95px;
+  text-align: right;
+  padding: 8px 30px;
+  font-size: 16px;
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #666666;
+  border-top: 1px #000000;
 }
 
 .past {
@@ -121,12 +111,13 @@ textarea::placeholder {
 }
 
 .fa-floppy-disk {
-  padding-top: 12px;
-  font-size: 36px;
+  font-size: 24px;
   cursor: pointer;
 }
 
 .saveBtn {
+  width: 80px;
+  border: none;
   border-left: 1px solid rgb(232, 232, 232);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -136,11 +127,11 @@ textarea::placeholder {
 }
 
 .saveBtn:hover {
-  background-image: linear-gradient(#2a60f4, #3511ab);
+  background-image: linear-gradient(#2a60f4, #2d27ec);
   transition: all .2s ease-in-out;
 }
 
 .saveBtn .fa-floppy-disk:hover {
-  font-size: 40px;
+  font-size: 28px;
   transition: all .2s ease-in-out;
 }

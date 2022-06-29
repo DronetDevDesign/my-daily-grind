@@ -22,116 +22,73 @@
     <p id="current-day" class="lead"></p>
   </header>
 
-  <div class="container">
-
+  <div class="main-container">
     <!-- Timeblocks go here -->
     <div class="row timeblock d-xl-flex d-md-block d-sm-block d-xs-block" id="time-block-groups">
-       
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">9AM</h4>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="9">9AM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col-xl-10 col-sm-12 border bg-light input-schedule" id="9">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar" class="input-list-element"></textarea>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="10">10AM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col border saveBtn" id="9">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="11">11AM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">10AM</h4>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="12">12PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col-xl-10 border bg-light input-schedule" id="10">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar" class="input-list-element"></textarea>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="1">1PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col border saveBtn" id="10">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="2">2PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">11AM</h4>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="3">3PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar" class="input-list-element"></textarea>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top bborder-md" id="4">4PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-      <div class="col border saveBtn">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
+  
+      <div class="input-group" id="grouping">
+        <h4 class="hour border-top border-md" id="5">5PM</h4>
+        <textarea type="text" class="col border bg-light input-schedule" id="input-text-area"
+          placeholder="Click here to add to calendar"></textarea>
+        <button class="saveBtn border" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
       </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">12PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn" id="time-of-day">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">1PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn" id="time-of-day">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">2PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">3PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn" id="time-of-day">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">4PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
-      <div class="hour col border-top border-right border-md input-schedule">
-        <h4 class="time-of-day">5PM</h4>
-      </div>
-      <div class="col-xl-10 border bg-light input-schedule">
-        <textarea id="input-text-area" rows="3" col="50" placeholder="Click here to add to calendar"
-        class="input-list-element"></textarea>
-      </div>
-      <div class="col border saveBtn">
-        <i class="fa-solid fa-floppy-disk ml-3"></i>
-      </div>
-
-
+      
     </div>
   </div>
 

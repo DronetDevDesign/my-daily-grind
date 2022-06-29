@@ -12,16 +12,25 @@ document.getElementById("current-day").innerHTML = todaysDate;
 
 // save calendar input-list-element:
 var saveInput = function(input) {
+  JSON.parse(localStorage.getItem("inputText"));
   localStorage.setItem("inputText", JSON.stringify(input));
 };
 
+// console.log((localStorage.getItem("inputText")));
+
+// var getInput = function() {
+//   localStorage.getItem(inputText);
+// }
+
 
   $(".saveBtn").on("click", function() {
-    var inputText = $(this).siblings(".input-schedule").children(".input-list-element").val();
-    if (inputText) {
-     saveInput(inputText);
-    }
-    console.log(inputText);
+    var inputText = $(this).parent(".input-group").children(".input-schedule").val();
+      if (inputText) {
+      saveInput(inputText);
+      }
+      
+      console.log(inputText);
+      // console.log((localStorage.getItem("inputText")));
   });
 
 
@@ -29,7 +38,7 @@ var saveInput = function(input) {
 
 
 
-  
+
 
 // ******************** ORIGINAL OPTION *****************************
 
